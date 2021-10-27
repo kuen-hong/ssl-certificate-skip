@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  wsserver:
+    build:
+      context: ./wsServer
+  nginx:
+    build:
+      context: ./nginx-ssl
+    ports:
+    - "443:443"
